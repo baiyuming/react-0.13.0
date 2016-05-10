@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello React</title>
+  <script src="build/react.js"></script>
+  <script src="build/JSXTransformer.js"></script>
+</head>
+<body>
+<div id="example"></div>
+<script type="text/jsx">
+  var Ul = React.createClass({
+    render: function(){
+      return (
+          <div>
+            <ul>
+              2222222222
+              <Li />
+            </ul>
+          </div>
+        )
+      }
+  });
+  var Li = React.createClass({
+    render: function(){
+      return (
+        <li>111111111111</li>
+      );
+    }
+  });
+  React.render(
+    <Ul />,
+    document.getElementById("example")
+  );
+</script>
+</body>
+</html>

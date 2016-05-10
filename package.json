@@ -1,0 +1,24 @@
+{
+  "name": "bym",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "test",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "test"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "test",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^1.13.0"
+  }
+}

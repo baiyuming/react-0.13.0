@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello React 你好世界</title>
+  <meta charset="utf-8"/>
+  <script src="build/react.js"></script>
+  <script src="build/JSXTransformer.js"></script>
+</head>
+<body>
+<div id="app"></div>
+<script type="text/jsx">
+  var World = React.createClass({
+    getInitialState:function(){
+      return {
+        isVisible: true,
+        titleMessage:"hello xiaolili!!!!!!! 来自state",
+      }
+    },
+    render:function(){
+      var styleObj = {
+        display : this.isVisible ? 'block' : 'none',
+      }
+      return (
+        <div>
+          <div >{ this.state.titleMessage }</div>
+          <Hello />
+        </div>
+      )
+    }
+  })
+  var Hello = React.createClass({
+    render : function(){
+      return (
+        <div>
+          <p>hello</p>
+        </div>
+      );
+    }
+  })
+  var Bym = React.render(
+    <World />,
+    document.getElementById("app"),
+    function(){
+      console.log("ok !!! ");
+    }
+  )
+</script>
+</body>
+</html>
